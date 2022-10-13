@@ -4,6 +4,7 @@
 
   &__container {
     @include flex-all-sb;
+    // @include flex-v-center;
   }
 
   &__nav {

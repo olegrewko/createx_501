@@ -10,7 +10,9 @@
 @import "./components/social";
 
 // подключения компонентов страницы (большие компоненты)
+@import "./components/nav";
 @import "./components/header";
+@import "./components/header-contacts";
 @import "./components/hero";
 @import "./components/about-section";
 @import "./components/mission";
