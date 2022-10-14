@@ -4,25 +4,13 @@
   }
 }
 
-@mixin middledesk {
-  @media (max-width: (1440px)) {
-    @content;
-  }
-}
-
-@mixin minidesk {
-  @media (max-width: (1200px)) {
-    @content;
-  }
-}
-
 @mixin tablet {
   @media (max-width: (1024px)) {
     @content;
   }
 }
 
-@mixin minitablet {
+@mixin small-tablet {
   @media (max-width: (768px)) {
     @content;
   }

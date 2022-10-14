@@ -1,43 +1,44 @@
+@import "../mixins";
+
 .social {
   display: flex;
-  align-items: center;
 
   &__item {
     &:not(:last-child) {
-      margin-right: 16px;
+      margin-right: var(--second-offset);
     }
   }
 
   &__link {
     display: block;
-    width: 24px;
-    height: 24px;
+    outline: none;
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease-in-out;
 
-    svg {
-      display: block;
-      width: 100%;
-      height: 100%;
-      fill: var(--color-light);
-      object-fit: cover;
-      opacity: 0.6;
-      transition: opacity 0.3s ease-in-out;
+    &--vk {
+      background-image: url("../img/vk.svg");
+    }
+
+    &--insta {
+      background-image: url("../img/insta.svg");
     }
 
     &:focus {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 2px;
+      opacity: 0.7;
     }
 
-    &:hover {
-      svg {
-        opacity: 1;
+    @include desktop {
+      &:hover {
+        opacity: 0.7;
       }
     }
 
     &:active {
-      svg {
-        opacity: 1;
-      }
+      opacity: 0.9;
     }
   }
 }
