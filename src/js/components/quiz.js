@@ -10,19 +10,19 @@ const quizData = [{
 				type: "checkbox"
 			},
 			{
-				answer_title: "кеды",
+				answer_title: "футбол",
 				type: "checkbox"
 			},
 			{
-				answer_title: "кеды",
+				answer_title: "теннис",
 				type: "checkbox"
 			},
       {
-				answer_title: "кеды",
+				answer_title: "фитнес",
 				type: "checkbox"
 			},
       {
-				answer_title: "кеды",
+				answer_title: "беговые",
 				type: "checkbox"
 			}
 		]
