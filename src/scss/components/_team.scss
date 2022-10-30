@@ -1,111 +1,54 @@
+@import "../mixins";
+
 .team {
-  padding-top: 54px;
-  padding-bottom: 120px;
+  position: relative;
+  padding: var(--big-offset) 0;
+  background-color: var(--color-eastbay);
+
+  &__title {
+    color: var(--color-white);
+  }
 
   &__list {
-    column-gap: var(--grid-gap);
-    margin-bottom: 80px;
-    row-gap: 64px;
-  }
-
-  &__top {
     position: relative;
-    margin-bottom: 12px;
-    font-size: 0;
-
-    @include tablet {
-      text-align: center;
-    }
+    z-index: 5;
+    gap: var(--main-offset) var(--second-offset);
   }
 
-  &__socials {
+  &__figure {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 0 4px 4px;
-    padding: 20px 10px;
-    width: 100%;
-    background-color: rgba(#ff5a30, 0.7);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    right: 0;
+    top: 0;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__item {
-    grid-column: 3 span;
-
-    &:hover {
-      .team__socials {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
-    @include tablet {
-      grid-column: 6 span;
-    }
+    grid-column: 4 span;
   }
 
-  &__text {
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--color-ebony);
+  &__img {
+    overflow: hidden;
+    margin-bottom: var(--second-offset);
+    border-radius: 4px;
 
-    a {
-      border-bottom: 1px solid currentColor;
-      color: var(--color-primary);
-      transition: color 0.3s ease-in-out;
-
-      &:focus {
-        outline: 2px solid var(--color-primary);
-        outline-offset: 2px;
-      }
-
-      &:hover {
-        color: var(--color-active);
-      }
-
-      &:active {
-        color: var(--color-active);
-      }
-    }
-  }
-
-  &__link {
-    display: block;
-    width: 20px;
-    height: 20px;
-
-    svg {
-      display: block;
+    @include small-tablet {
       width: 100%;
-      height: 100%;
-      fill: var(--color-light);
-      object-fit: cover;
-    }
-
-    &:not(:last-child) {
-      margin-right: 12px;
     }
   }
 
-  &__name {
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--color-gray);
+  &__subtitle {
+    display: block;
+    margin-bottom: var(--second-offset);
+    font: var(--prehigh-book);
+    color: var(--color-white);
   }
 
   &__post {
-    font-size: 16px;
-    line-height: 160%;
-    text-align: center;
-    color: var(--color-storm);
+    display: block;
+    font: var(--middle-book);
+    color: var(--color-white);
   }
 }

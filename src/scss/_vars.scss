@@ -1,24 +1,44 @@
-// colors
+@import "./mixins";
+
 :root {
+  // цвета
   --color-black: #000;
-  --color-light: #fff;
-  --color-gray: #424551;
-  --color-storm: #787a80;
-  --color-ebony: #1e212c;
-  --color-primary: #ff5a30;
-  --color-athens: #f4f5f7;
-  --color-active: #fc3300;
+  --color-white: #fff;
+  --color-eastbay: #484283;
+  --color-main: #444b58;
+  --color-main-hover: #31343c;
+  --color-accent: #f14f4f;
+  --color-accent-hover: #cc4949;
+  --color-border: rgba(255, 255, 255, 0.5);
+  --color-bg: #fff4ee;
+  --color-cameo: #dbbba9;
+  --color-gray: #b2b5bb;
+  --color-jumbo: #808080;
+  --color-btn-active: #8c2828;
 
-  // sizes
-  --grid-gap: 30px;
+  // отступы
+  --grid-gap: 20px;
+  --main-offset: 40px;
+  --second-offset: 20px;
+  --small-offset: 10px;
+  --big-offset: 60px;
 
-  // speed
-  --hero-slider-speed: 500;
+  // шрифты
+  --font-family: "Intro", sans-serif;
+  --middle-high-bold: 700 30px / 140% var(--font-family);
+  --prehigh-book: 400 24px / 24px var(--font-family);
+  --prehigh-regular: 600 20px / 20px var(--font-family);
+  --middle-book: 400 16px / 140% var(--font-family);
+  --middle-regular: 600 16px / 140% var(--font-family);
+  --small-book: 400 14px / 140% var(--font-family);
+}
 
-  // stylization
-  --main-shadow:
-    0 80px 80px -20px rgba(154, 156, 165, 0.08),
-    0 30px 24px -10px rgba(154, 156, 165, 0.05),
-    0 12px 10px -6px rgba(154, 156, 165, 0.04),
-    0 4px 4px -4px rgba(30, 33, 44, 0.03);
+@include mobile {
+  :root {
+    --grid-gap: 10px;
+    --main-offset: 20px;
+    --second-offset: 14px;
+    --small-offset: 8px;
+    --big-offset: 30px;
+  }
 }

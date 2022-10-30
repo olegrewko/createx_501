@@ -1,39 +1,44 @@
-<header class="header header--main">
-  <div class="container header__container">
-    <a href="#" class="logo">
-      <img src="../img/logo.svg" alt="Createx Logo">
-    </a>
-    <nav class="nav header__nav">
-      <ul class="nav__list list-reset">
-        <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">News</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
-      </ul>
-      <div class="header-contacts header-contacts--nav">
-        <a href="tel:4055550128" class="header-contacts__link contacts-link contacts-link--call">
-          <span class="contacts-link__caption">Call us</span>
-          <span class="contacts-link__value">(405) 555-0128</span>
-        </a>
-        <a href="mailto:hello@createx.com" class="header-contacts__link contacts-link contacts-link--mail">
-          <span class="contacts-link__caption">Talk to us</span>
-          <span class="contacts-link__value">hello@createx.com</span>
-        </a>
-      </div>
-    </nav>
-    <div class="header-contacts">
-      <a href="tel:4055550128" class="header-contacts__link contacts-link contacts-link--call">
-        <span class="contacts-link__caption">Call us</span>
-        <span class="contacts-link__value">(405) 555-0128</span>
-      </a>
-      <a href="mailto:hello@createx.com" class="header-contacts__link contacts-link contacts-link--mail">
-        <span class="contacts-link__caption">Talk to us</span>
-        <span class="contacts-link__value">hello@createx.com</span>
-      </a>
+<header class="header fix-block">
+  <div class="container grid header__container">
+    <div class="header__left">
+      <a class="logo header__logo">SneakMax</a>
     </div>
-    <button class="btn-reset burger" aria-label="Открыть меню">
-      <span class="burger__line"></span>
-    </button>
+    <div class="header__right">
+      <nav class="nav header__nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Подбор товара</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Наша команда</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Доставка и оплата</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="burger btn-reset">
+        <span class="burger__line"></span>
+      </button>
+      <div class="cart header__cart">
+        <button class="btn-reset cart__btn cart__btn--inactive">
+          <svg>
+            <use xlink:href="img/sprite.svg#cart"></use>
+          </svg>
+          <div class="cart__count">1</div>
+        </button>
+        <div class="mini-cart">
+          <div class="mini-cart__top" data-simplebar>
+            <ul class="mini-cart__list list-reset">
+            </ul>
+          </div>
+          <div class="mini-cart__bottom">
+            <div class="mini-cart__itog">
+              <span class="mini-cart__txt">Итого:</span>
+              <span class="mini-cart__summ">0 р</span>
+            </div>
+            <button class="btn-reset btn btn--primary mini-cart__btn" data-graph-path="cart-modal">Перейти в
+              корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
