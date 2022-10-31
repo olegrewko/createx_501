@@ -45,8 +45,15 @@
 
   &__count {
     position: absolute;
+<<<<<<< HEAD
     right: -6px;
     bottom: -6px;
+=======
+    right: 0;
+    bottom: 0;
+    // right: -6px;
+    // bottom: -6px;
+>>>>>>> 61674bec389c0c1dffaacdaf39c0f4c5115bac2a
     display: inline-flex;
     align-items: center;
     justify-content: center;

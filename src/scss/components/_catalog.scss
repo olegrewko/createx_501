@@ -142,6 +142,12 @@
       border-bottom-right-radius: 4px;
     }
   }
+<<<<<<< HEAD
+=======
+  // &__element {
+  //   width: 100%;
+  //   height: 2px;
+>>>>>>> 61674bec389c0c1dffaacdaf39c0f4c5115bac2a
 
   .noUi-horizontal {
     height: 2px;
@@ -175,6 +181,10 @@
   .noUi-handle::after,
   .noUi-handle::before {
     display: none;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 61674bec389c0c1dffaacdaf39c0f4c5115bac2a
   }
 
   .noUi-handle-lower {
@@ -190,3 +200,7 @@
 .catalog-price__input.focus-visible {
   background-color: var(--color-cameo);
 }
+<<<<<<< HEAD
+=======
+// }
+>>>>>>> 61674bec389c0c1dffaacdaf39c0f4c5115bac2a

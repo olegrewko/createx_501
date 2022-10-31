@@ -10,6 +10,7 @@ const quizData = [{
 				type: "checkbox"
 			},
 			{
+<<<<<<< HEAD
 				answer_title: "кеды",
 				type: "checkbox"
 			},
@@ -23,6 +24,21 @@ const quizData = [{
 			},
       {
 				answer_title: "кеды",
+=======
+				answer_title: "футбол",
+				type: "checkbox"
+			},
+			{
+				answer_title: "теннис",
+				type: "checkbox"
+			},
+      {
+				answer_title: "фитнес",
+				type: "checkbox"
+			},
+      {
+				answer_title: "беговые",
+>>>>>>> 61674bec389c0c1dffaacdaf39c0f4c5115bac2a
 				type: "checkbox"
 			}
 		]
